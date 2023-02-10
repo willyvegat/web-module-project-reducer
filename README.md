@@ -58,16 +58,16 @@ export const initialState = {
 * [ x] Within `App.js`, create an event handler connected to the 1 button's `onClick` method.
 * [ x] Within your event handler, dispatch the `addOne` action creator.
 * [ x] **Test** that your event is correctly connected by pushing the 1 button in the browser. Your total should increase by 1.
-* [ ] **Think** about the path of execution from the clicking of the one button to the rendering of the updated total. What is the order of execution? Within the `Understanding-Question.md` file, write out in your own words the steps of that process.
+* [ x] **Think** about the path of execution from the clicking of the one button to the rendering of the updated total. What is the order of execution? Within the `Understanding-Question.md` file, write out in your own words the steps of that process.
 
 
 #### Connect a better premade action.
-> *Adding indivisual actions for every number would be tedious. Let's add in an action that can work for ALL numerical input*
-* [ ] Note the `APPLY_NUMBER` action case (in ./reducer/index.js) and `applyNumber` action creator (in ./actions/index.js). This action adds, multiplies or subtracts a number passed into the action creator.
-* [ ] Import the `applyNumber` action creator into `App.js.`
-* [ ] Remove or comment out the `addOne` event handler from the 1 button.
-* [ ] Create an eventhandler that takes in a number as an argument and dispatches `applyNumber` with it.
-* [ ] Attach that eventhandler to the 1 button's `onClick` method, passing in a 1 as an argument. (Remember that we pass a function into that click handler, not the execution of a function)
+> *Adding individual actions for every number would be tedious. Let's add in an action that can work for ALL numerical input*
+* [ x] Note the `APPLY_NUMBER` action case (in ./reducer/index.js) and `applyNumber` action creator (in ./actions/index.js). This action adds, multiplies or subtracts a number passed into the action creator.
+* [ x] Import the `applyNumber` action creator into `App.js.`
+* [ x] Remove or comment out the `addOne` event handler from the 1 button.
+* [ x] Create an eventhandler that takes in a number as an argument and dispatches `applyNumber` with it.
+* [ x] Attach that eventhandler to the 1 button's `onClick` method, passing in a 1 as an argument. (Remember that we pass a function into that click handler, not the execution of a function)
 * [ ] **Test** that clicking the one button still adds one to the total display on the browser.
 * [ ] Connect all other number buttons to your new event handler, passing in their respective values.
 * [ ] **Test** that clicking on each button will add its respective value to the total display.
